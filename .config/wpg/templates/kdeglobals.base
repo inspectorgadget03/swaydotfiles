@@ -27,5 +27,16 @@ View Style=Simple
 [PreviewSettings]
 MaximumRemoteSize=0
 
-[Colors:View] 
+[Colors:View]
+BackgroundAlternate={color0}
 BackgroundNormal={color0}
+ForegroundActive={color8}
+ForegroundNormal={color15}
+ForegroundInactive={color4}
+
+[Colors:Window]
+BackgroundAlternate={color0}
+BackgroundNormal={color0}
+ForegroundActive={color8}
+ForegroundNormal={color15}
+ForegroundInactive={color4}

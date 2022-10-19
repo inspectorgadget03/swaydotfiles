@@ -42,7 +42,7 @@ takeInitialSS() {
 #
 ###############################
 photoEditor() {
-  showEditor=$(zenity --list  --title "Screenshot" --column "Show Editor" yes no)
+  #showEditor=$(zenity --list  --title "Screenshot" --column "Show Editor" yes no)
 	[[ "$showEditor" == "yes" ]] && swappy -f /tmp/$@ -o /tmp/$@ || echo "->"
 }
 
@@ -92,7 +92,7 @@ rectangularSS() {
 ###############################
 isMultiple(){
 	for a in $(swaymsg -t get_outputs | jq -r ".[].name"); do
-		files="$files $a"
+		files="$files /tmp/$a.png"
 	done
 
 	pushd /tmp
